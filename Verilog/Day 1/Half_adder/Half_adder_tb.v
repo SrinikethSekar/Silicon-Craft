@@ -6,8 +6,7 @@ wire sum,carry;   //Half adder output
 
   Half_Adder uut(.a(a),.b(b),.sum(sum),.carry(carry)); //calling the input to the test bench through instantiation(represent in ".a(a)")
  initial
-   begin
- $monitor("mtime %d a=%d b=%d sum=%d carry=%d",$test,a,b,sum,carry);  //monitor the input values 
+   begin 
  $dumpfile("Half_Adder.vcd");
  $dumpvars(0,Half_Adder_tb);
  end
