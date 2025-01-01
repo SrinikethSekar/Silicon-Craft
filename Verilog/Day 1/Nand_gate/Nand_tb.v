@@ -1,4 +1,4 @@
-module And_tb();
+module Nand_tb();
   reg a,b;
   wire c;
 
