@@ -6,9 +6,9 @@ module top_module(
 	output o0
 );
 	
-	assign outv = vec;
-	assign o0 = vec[0];
-	assign o1 = vec[1];
-	assign o2 = vec[2];
+	assign outv = vec;   
+	assign o0 = vec[0];  //first bit
+	assign o1 = vec[1];  //second bit
+	assign o2 = vec[2];  //third bit
 	
 endmodule
