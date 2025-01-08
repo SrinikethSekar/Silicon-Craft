@@ -2,7 +2,7 @@ module top_module(
     input [7:0] in,
     output [7:0] out
 );
-    assign out[7] = in[0];
+    assign out[7] = in[0];  // assign the inputs to the output in the reverse order for all
     assign out[6] = in[1];
     assign out[5] = in[2];
     assign out[4] = in[3];
