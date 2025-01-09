@@ -5,10 +5,10 @@ module top_module (
     output [7:0] q 
 );
     wire[7:0]x,y,z;
-    my_dff8 m1(clk,d,x);
-    my_dff8 m2(clk,x,y);
-    my_dff8 m3(clk,y,z);
-    always@(*)
+    my_dff8 m1(clk,d,x); //first shift
+    my_dff8 m2(clk,x,y); //second shift
+    my_dff8 m3(clk,y,z); //third shift
+    always@(*) //using the always statement, we can able to make a condition for four possibilities 
         begin
             case(sel)
                 2'b00:q=d;
