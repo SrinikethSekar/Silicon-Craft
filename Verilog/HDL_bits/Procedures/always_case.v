@@ -9,14 +9,14 @@ module top_module (
     output reg [3:0] out   );//
 
     always@(*) begin  // This is a combinational circuit
-        case(sel)
+        case(sel) //select line is the main case
             3'b000:out=data0;
             3'b001:out=data1;
             3'b010:out=data2;
             3'b011:out=data3;
             3'b100:out=data4;
             3'b101:out=data5;
-            default:out=4'b0000;
+            default:out=4'b0000;//declare the inputs to the outputs
         endcase
     end
 
