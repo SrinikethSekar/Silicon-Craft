@@ -5,7 +5,7 @@ module top_module (
 
     always @(*) begin			// Combinational always block
         casez(in[7:0])
-			8'bzzzz_zzz1: pos = 3'd0;	
+			8'bzzzz_zzz1: pos = 3'd0;	//8 bit counter
 			8'bzzzz_zz1z: pos = 3'd1;
             8'bzzzz_z1zz: pos = 3'd2;
             8'bzzzz_1zzz: pos = 3'd3;
