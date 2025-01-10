@@ -8,7 +8,7 @@ module top_module(
     assign out_assign=(sel_b1&sel_b2)?b:a;
     
     always@(*)begin
-        if(sel_b1&sel_b2)begin
+        if(sel_b1&sel_b2)begin //combine both the select line inside one if statement 
             out_always=b;
         end
         else
