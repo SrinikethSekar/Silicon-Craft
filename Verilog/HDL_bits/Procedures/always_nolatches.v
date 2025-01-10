@@ -6,7 +6,7 @@ module top_module (
     output reg right,
     output reg up  ); 
 always @(*) begin
-    up = 1'b0; down = 1'b0; left = 1'b0; right = 1'b0;
+    up = 1'b0; down = 1'b0; left = 1'b0; right = 1'b0; //using this sequence also we can declare the given
     case (scancode)
         	16'he06b:left=1'b1 ;
 			16'he072:	down=1'b1;
