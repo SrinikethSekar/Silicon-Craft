@@ -6,7 +6,7 @@ module top_module (
 	always @(*) begin			// Combinational always block
 		case (in)
 			4'h0: pos = 2'h0;	// I like hexadecimal because it saves typing.
-			4'h1: pos = 2'h0;
+			4'h1: pos = 2'h0;//0001
 			4'h2: pos = 2'h1;
 			4'h3: pos = 2'h0;
 			4'h4: pos = 2'h2;
