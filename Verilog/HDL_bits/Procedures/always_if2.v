@@ -9,7 +9,7 @@ module top_module (
         if (cpu_overheated)
            shut_off_computer = 1;
         else
-            shut_off_computer = 0;
+            shut_off_computer = 0; //other condition for the given
     end
 
     always @(*) begin
