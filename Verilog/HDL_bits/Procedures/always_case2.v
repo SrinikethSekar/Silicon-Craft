@@ -6,7 +6,7 @@ module top_module (
 	always @(*) begin			// Combinational always block
 		case (in)
 			4'h0: pos = 2'h0;	// I like hexadecimal because it saves typing.
-			4'h1: pos = 2'h0;//0001
+			4'h1: pos = 2'h0;//0000
 			4'h2: pos = 2'h1;
 			4'h3: pos = 2'h0;
 			4'h4: pos = 2'h2;
@@ -20,7 +20,7 @@ module top_module (
 			4'hc: pos = 2'h2;
 			4'hd: pos = 2'h0;
 			4'he: pos = 2'h1;
-			4'hf: pos = 2'h0;
+			4'hf: pos = 2'h0;//1111
 			default: pos = 2'b0;	// Default case is not strictly necessary because all 16 combinations are covered.
 		endcase
 	end
