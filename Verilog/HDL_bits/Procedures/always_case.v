@@ -10,7 +10,7 @@ module top_module (
 
     always@(*) begin  // This is a combinational circuit
         case(sel) //select line is the main case
-            3'b000:out=data0;
+            3'b000:out=data0; //upto 5 it counts
             3'b001:out=data1;
             3'b010:out=data2;
             3'b011:out=data3;
