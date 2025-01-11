@@ -8,7 +8,7 @@ module top_module(
     
     assign out_assign=a^b;  //create a or gate using assignment statement 
     always@(*) out_always_comb = a^b;//same using always statement 
-    always@(posedge clk)
+    always@(posedge clk) //use clock for the statement 
         out_always_ff<=a^b;
 
 endmodule
