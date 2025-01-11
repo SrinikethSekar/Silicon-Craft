@@ -15,7 +15,7 @@ module top_module (
     always @(*) begin
         if (~arrived)
            keep_driving = ~gas_tank_empty;
-        else if(~gas_tank_empty)
+        else if(~gas_tank_empty)//main condition for the second one it should be inside 
             keep_driving=1'b0;
         else
             keep_driving=1'b0;
