@@ -11,7 +11,7 @@ module top_module (
     
 endmodule
 
-module add1 ( input a, input b, input cin,   output sum, output cout );
+module add1 ( input a, input b, input cin,   output sum, output cout );//this module is separate and created for the above code
     assign {cout,sum}=a+b+cin; // first module is called here for the output
     
 endmodule
