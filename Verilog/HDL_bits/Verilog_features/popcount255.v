@@ -3,7 +3,7 @@ module top_module(
     input [254:0] in,
     output [7:0] out );
 
-    reg [7:0] count;
+    reg [7:0] count; //save the input through a register file
     integer i;
     always @(*) begin
         count = 8'b0;  // Reset count
