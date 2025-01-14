@@ -6,7 +6,7 @@ module top_module(
     integer i;
     
     always@(*)begin
-        for(i=0;i<100;i=i+1)begin
+        for(i=0;i<100;i=i+1)begin // loop condition for count
             temp[i]=in[99-i];
         end
         out=temp;
