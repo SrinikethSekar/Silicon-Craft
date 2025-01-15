@@ -4,5 +4,5 @@ module top_module (
 	wire [7:0]intermediate_result1,intermediate_result2;//seperation of the given input through wire
     assign intermediate_result1 = (a<b)? a:b;
     assign intermediate_result2 = (c<d)? c:d;
-    assign min = (intermediate_result1<intermediate_result2)? intermediate_result1:intermediate_result2;
+    assign min = (intermediate_result1<intermediate_result2)? intermediate_result1:intermediate_result2;//concatenation of both the modules 
 endmodule
