@@ -2,7 +2,7 @@ module top_module(
     input [99:0] in,
     output [99:0] out
 );
-    reg[99:0]temp;
+    reg[99:0]temp;//storage of 99input
     integer i;
     
     always@(*)begin
