@@ -4,5 +4,5 @@ output d,b0
     );
 
   assign d=(a^b);  //difference using xor gate
-  assign b0=(~a&b);
+  assign b0=(~a&b); //borrow using and gate
 endmodule
