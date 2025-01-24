@@ -5,7 +5,7 @@ wire d,b0;
     Half_subtractor uut(.a(a),.b(b),.d(d),.b0(b0));
 initial begin
 $dumpfile("waves.vcd");
-$dumpfile();
+$dumpvars();
 end
 
 initial begin
