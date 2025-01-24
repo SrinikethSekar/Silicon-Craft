@@ -1,4 +1,4 @@
-module(
+module fa(
   input a,b,cin,
   output sum,carry
 );
