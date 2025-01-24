@@ -9,10 +9,11 @@ initial begin
 	$dumpfile("waves.vcd");
 	$dumpvars;
 end
-integer i;
+
 initial 
 begin
 	$monitor("time=%d in1=%b in2=%b sel=%b out=%b",$time,in1,in2,sel,out);
+//using the truth table we can able to create the testbench
 	sel=0;in1=0;in2=0;#10;
 	sel=0;in1=0;in2=1;#10;
 	sel=0;in1=1;in2=0;#10;
