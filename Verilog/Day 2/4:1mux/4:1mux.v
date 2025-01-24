@@ -6,9 +6,9 @@ output reg y_out
 always@(*)
 begin
 	case(sel_in)
-		2'b00:y_out=data_in[0];
+		2'b00:y_out=data_in[0]; //calling the 0th bit
 		2'b01:y_out=data_in[1];
-		2'b10:y_out=data_in[2];
+		2'b10:y_out=data_in[2];//calling the 2nd bit
 		2'b11:y_out=data_in[3];
 		default:y_out=0;
 	endcase
