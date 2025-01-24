@@ -5,7 +5,7 @@ output out
 );
 
 
-assign out =sel? in2:in1;
+assign out =sel? in2:in1; //using conditional operator
 
 
 endmodule
