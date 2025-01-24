@@ -12,8 +12,8 @@ output diff,borrow
     );
     wire w1,w2,w3;
     
-    Half_subtractor HB1(.a(a),.b(b),.diff(w1),.borrow(w2));
-    Half_subtractor HB2(.a(w1),.b(c),.diff(diff),.borrow(w3));
+    Half_subtractor HB1(.a(a),.b(b),.diff(w1),.borrow(w2));//instantiating the half Subtractor module
+    Half_subtractor  HB2(.a(w1),.b(c),.diff(diff),.borrow(w3));
   or OR1(borrow,w2,w3);
  
 endmodule
