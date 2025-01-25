@@ -20,8 +20,8 @@ module fa(
   output sum,carry
 );
 
-  assign sum = (a^b^cin);
-  assign carry = (a&b) | (b&cin) | (cin&a);
+  assign sum = (a^b^cin); //sum using exor 
+  assign carry = (a&b) | (b&cin) | (cin&a); //carry 
 
 endmodule
  
