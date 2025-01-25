@@ -13,7 +13,7 @@ initial begin
 end
 
 initial
-begin
+begin//random samples for input 
 	a0=$random%16;
 	a1=$random%16;
 	a2=$random%16;
