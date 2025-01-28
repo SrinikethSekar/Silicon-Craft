@@ -1,4 +1,4 @@
-module sr_ff(
+module jk_ff(
   input j,k,
   input clk,rst,
   output reg q,
