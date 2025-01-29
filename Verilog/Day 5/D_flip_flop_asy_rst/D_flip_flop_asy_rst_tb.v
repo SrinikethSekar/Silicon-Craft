@@ -1,17 +1,31 @@
-module dff (
-  input clk, rst_n,
-  input d,
-  output reg q ,qb
-  );
+module dff_tb();
+  reg clk,rst_n,d;
+  wire q,qb;
   
-  always@(posedge clk or negedge rst_n) 
-    begin
-    if(!rst_n) 
-      q <= 1'b0;
-     
-    else      
-      q <= d;
-    
+  
+  dff dff1(clk,rst_n,d,q,qb);
+  //test sequence
+  initial begin
+    $dumpfile("wave.vcd");
+    $dumpvars;
   end
-  assign qb=~q;
+  //clock generation
+  initial begin
+    clk=0;
+    forever #5 clk=~clk;
+  end
+    
+  initial begin
+    $monitor("Time=%0t | clk=%b | rst_n=%b | d=%b | q=%b | qb=%b",$time,clk,rst_n,d,q,qb);
+    
+    //initial signals
+    
+    rst_n=1; d=0; #10;
+    rst_n=0; d=1; #10;
+   	rst_n=0; d=0; #10;
+    $finish;
+  end
 endmodule
+    
+    
+  
