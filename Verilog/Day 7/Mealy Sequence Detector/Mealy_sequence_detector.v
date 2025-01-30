@@ -48,7 +48,7 @@ module fsm_seq(
     end
   
   assign out=(state==s3) &&(in==0);
-  
+  //output is obtained when the sequence is generated 
  
   
  endmodule
