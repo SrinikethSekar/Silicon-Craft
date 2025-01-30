@@ -11,7 +11,7 @@ module fsm_seq(
     
   reg [1:0] state,next; //storing the data in register 
   
-  always@(posedge clk or negedge rst)
+  always@(posedge clk or negedge rst)//base condition for the fsm
   	begin
       if(!rst)
       state <= s0;
