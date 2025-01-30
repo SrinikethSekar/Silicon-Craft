@@ -3,7 +3,7 @@ module fsm_seq(
   input rst,
   input in,
   output reg out);
-  
+  //parameter the given input conditons
   parameter[1:0] s0=2'b00,
   				 s1=2'b01,
   				 s2=2'b10,
