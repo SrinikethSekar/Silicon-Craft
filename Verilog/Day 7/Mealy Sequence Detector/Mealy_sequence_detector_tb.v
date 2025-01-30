@@ -5,7 +5,7 @@ module TB;
   fsm_seq sd(clk, rst, in, out);
   initial clk = 0;   
   always #2 clk = ~clk;
-    
+    //clk should be given appropriate to the sequence or sequence should be matched for the clock
   initial begin
     $monitor("clk=%b rst=%b in=%b out=%b",clk,rst,in,out);
     in = 0;
