@@ -12,7 +12,7 @@ module TB;
     in = 0;
     #1 rst = 0;
     #2 rst = 1;
-    
+    //given inputs will be considered at the posedge of the clock only
     #3 in = 1;
     #4 in = 1;
     #4 in = 0;
