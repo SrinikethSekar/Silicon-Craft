@@ -8,6 +8,7 @@ module TB;
     //clk should be given appropriate to the sequence or sequence should be matched for the clock
   initial begin
     $monitor("clk=%b rst=%b in=%b out=%b",clk,rst,in,out);
+//initial signals
     in = 0;
     #1 rst = 0;
     #2 rst = 1;
