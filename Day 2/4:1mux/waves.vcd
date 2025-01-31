@@ -1,0 +1,48 @@
+$date
+	Fri Jan 24 19:20:15 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module fourtoonemux_tb $end
+$var wire 1 ! y_out $end
+$var reg 4 " data_in [3:0] $end
+$var reg 2 # sel_in [1:0] $end
+$scope module uut $end
+$var wire 4 $ data_in [3:0] $end
+$var wire 2 % sel_in [1:0] $end
+$var reg 1 ! y_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+b0 $
+b0 #
+b0 "
+0!
+$end
+#10
+b1 #
+b1 %
+b1101 "
+b1101 $
+#20
+b10 #
+b10 %
+b1010 "
+b1010 $
+#30
+1!
+b11 #
+b11 %
+b1111 "
+b1111 $
+#40
