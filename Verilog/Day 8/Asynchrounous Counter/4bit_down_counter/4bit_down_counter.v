@@ -1,4 +1,4 @@
-module fourbit_up_counterA(
+module fourbit_down_counterA(
   input rst,clk,
   output reg [3:0]out);
   
