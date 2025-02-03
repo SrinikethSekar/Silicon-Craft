@@ -1,29 +1,22 @@
-module fourbit_up_down_counterA_tb();
-  reg rst,clk,up_down;
-  wire out;
-  
-  fourbit_up_down_counterA uut(rst,clk,up_down,out);
-  initial 
-    begin
-      clk=0;
-      forever #5 clk=~clk;
-  
-    end
+module TB_Async_UpDown_Counter;
+  reg clk, rst_n, j, k, up;
+  wire [3:0] q, q_bar;
+
+  Async_UpDown_Counter UUT (clk, rst_n, j, k, up, q, q_bar);
+
+  always #2 clk = ~clk; 
+
   initial begin
-    $dumpfile("waves.vcd");
-    $dumpvars;
+    $dumpfile("counter.vcd");
+    $dumpvars(0, TB_Async_UpDown_Counter);
+
+    clk = 0; rst_n = 0; up = 1; 
+    #4 rst_n = 1; j = 1; k = 1; 
+
+    #40 up = 0; 
+    #40 rst_n = 0; 
+    #4 rst_n = 1; up = 1; 
+
+    #50 $finish;
   end
-  
-  initial
-    begin
-      $monitor(" rst=%b clk=%b up_down=%b out=%d",rst,clk,up_down,out);
-      
-      rst=1; #20;
-      rst=0;up_down=1; #100;
-      up_down=0; #100;
-      rst=1; #20;
-      rst=0; up_down=1;#100;
-      
-      $finish;
-    end
 endmodule
