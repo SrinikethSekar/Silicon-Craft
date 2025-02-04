@@ -1,7 +1,7 @@
 module dpram(
   input clk,
-  input we_a,we_b,
-  input [2:0]addr_a,addr_b,
+  input we_a,we_b,//two write enable
+  input [2:0]addr_a,addr_b,//two address
   input [7:0]data_a,data_b,
   output reg [7:0]out_a,out_b
 );
